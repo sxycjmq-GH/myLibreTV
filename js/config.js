@@ -7,7 +7,7 @@ const MAX_HISTORY_ITEMS = 5;
 // 密码保护配置
 // 注意：PASSWORD 环境变量是必需的，所有部署都必须设置密码以确保安全
 const PASSWORD_CONFIG = {
-    localStorageKey: 'passwordVerified',  // 存储验证状态的键名
+    localStorageKey: 'passwordVerified',  // 存储验证状态的键名                                                                                                                                                                                                                                                      
     verificationTTL: 90 * 24 * 60 * 60 * 1000  // 验证有效期（90天，约3个月）
 };
 
@@ -57,12 +57,16 @@ const API_SITES = {
         api: 'https://360zy.com/api.php/provide/vod',
         name: '360资源',
     },
-    iqiyi: {
+    "maotaizy": {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+        "api": "https://caiji.maotaizy.cc/api.php/provide/vod",                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            
+      "name": "茅台资源"
+    },
+    iqiyi: {  
         api: 'https://www.iqiyizyapi.com/api.php/provide/vod',
-        name: 'iqiyi资源',
+        name: 'iqiyi资源',                                                                                                                                                                                                                                                                                                                                                                                                                                          
     },
     wolong: {
-        api: 'https://wolongzyw.com/api.php/provide/vod',
+        api: 'https://wolongzyw.com/api.php/provide/vod',                                                                                                                                                                                                                                                                                                                  
         name: '卧龙资源',
     }, 
     hwba: {
